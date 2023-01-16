@@ -10,9 +10,9 @@ export default class CollapseCard extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="collapse_card">
         <div className="collapse_head">
-          <button className="collapse_head_button" type="button">
+          <button className="collapse_head_button btn" type="button">
             {this.props.obj.title}
           </button>
         </div>

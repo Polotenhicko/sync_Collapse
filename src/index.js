@@ -21,4 +21,9 @@ const collapseList = [
 ];
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Collapse list={collapseList} />);
+root.render(
+  <div>
+    <h1>Text</h1>
+    <Collapse list={collapseList} />
+  </div>
+);

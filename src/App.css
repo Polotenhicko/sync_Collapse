@@ -11,14 +11,20 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
 }
 
+#root {
+  max-width: 1200px;
+  width: 100%;
+}
+
 .collapse {
   max-width: 1200px;
+  width: 100%;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.125);
   font-weight: 400;
@@ -56,13 +62,19 @@ body {
 .collapse .collapse_body {
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+.collapse .collapse_body_text {
   padding: 20px;
   font-size: 16px;
-  transition: all 0.8s;
 }
 
 .collapse .collapse_body.close {
-  max-height: 0 !important;
-  padding-top: 0;
-  padding-bottom: 0;
+  height: 0;
+}
+
+.collapse .collapse_body.collapsing {
+  transition: height 0.35s ease;
 }

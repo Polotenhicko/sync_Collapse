@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sync_collapse/static/css/main.2294070c.css",
+    "main.js": "/sync_collapse/static/js/main.0ba0c688.js",
+    "index.html": "/sync_collapse/index.html",
+    "main.2294070c.css.map": "/sync_collapse/static/css/main.2294070c.css.map",
+    "main.0ba0c688.js.map": "/sync_collapse/static/js/main.0ba0c688.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2294070c.css",
+    "static/js/main.0ba0c688.js"
+  ]
+}

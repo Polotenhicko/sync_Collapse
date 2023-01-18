@@ -64,6 +64,7 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   overflow: hidden;
   transition: height 0.35s ease;
+  height: 0;
 }
 
 .collapse .collapse_body_text {
@@ -71,9 +72,9 @@ body {
   font-size: 16px;
 }
 
-.collapse .collapse_body.close {
+/* .collapse .collapse_body.close {
   height: 0;
-}
+} */
 
 .collapse .collapse_body.collapsing {
   transition: height 0.35s ease;

@@ -72,10 +72,6 @@ body {
   font-size: 16px;
 }
 
-/* .collapse .collapse_body.close {
-  height: 0;
-} */
-
 .collapse .collapse_body.collapsing {
   transition: height 0.35s ease;
 }

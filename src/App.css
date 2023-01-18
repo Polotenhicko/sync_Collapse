@@ -52,6 +52,7 @@ body {
   user-select: none;
   color: #007bff;
   font-size: 18px;
+  box-shadow: none;
 }
 
 .collapse .collapse_head_button:hover {

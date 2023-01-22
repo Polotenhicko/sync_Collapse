@@ -8,9 +8,9 @@ export default class CollapseCard extends React.Component {
   };
 
   render() {
-    const height = this.props.obj.isClose ? '' : this.ref.current.offsetHeight + 'px';
+    const height = this.props.isOpen ? this.ref.current.offsetHeight + 'px' : '';
     return (
-      <div className="collapse_card">
+      <div className={`collapse_card${this.props.obj.isOpen ? ' show' : ''}`}>
         <div className="collapse_head">
           <button className="collapse_head_button btn" type="button" onClick={this.handleClickButton}>
             {this.props.obj.title}

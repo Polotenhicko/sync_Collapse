@@ -4,27 +4,26 @@ import CollapseCard from './CollapseCard';
 export default class Collapse extends React.Component {
   constructor(props) {
     super(props);
-    const list = this.props.list.map((obj) => ({ ...obj, isClose: true }));
+    const opennedId = this.props.list.find((obj) => obj.isOpen)?.id;
     this.state = {
-      list,
+      opennedId,
     };
   }
 
   handleClickButton = (id) => {
-    this.setState((state) => {
-      return {
-        list: state.list.map((obj) =>
-          obj.id == id || !obj.isClose ? { ...obj, isClose: !obj.isClose } : obj
-        ),
-      };
-    });
+    this.setState((state) => ({ opennedId: id === state.opennedId ? null : id }));
   };
 
   render() {
     return (
       <div className="collapse">
-        {this.state.list.map((obj) => (
-          <CollapseCard key={obj.id} obj={obj} onClickButton={this.handleClickButton} />
+        {this.props.list.map((obj) => (
+          <CollapseCard
+            key={obj.id}
+            obj={obj}
+            isOpen={this.state.opennedId === obj.id}
+            onClickButton={this.handleClickButton}
+          />
         ))}
       </div>
     );

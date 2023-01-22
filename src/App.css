@@ -27,6 +27,7 @@ body {
   width: 100%;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: 0;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -36,9 +37,24 @@ body {
 }
 
 .collapse .collapse_head {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   background-color: rgba(0, 0, 0, 0.03);
   padding: 12px 20px;
+}
+
+.collapse .collapse_card:not(:last-child) .collapse_body {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.collapse .collapse_card:last-child .collapse_body {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.collapse .collapse_card.show:last-child .collapse_body {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.collapse .collapse_card.show:not(:last-child) .collapse_body {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .btn {
@@ -62,7 +78,6 @@ body {
 
 .collapse .collapse_body {
   background-color: #fff;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   overflow: hidden;
   transition: height 0.35s ease;
   height: 0;

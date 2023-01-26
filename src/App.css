@@ -92,52 +92,50 @@ body {
   transition: height 0.35s ease;
 }
 
-
-
 /*  */
 
- 
+.img {
+  width: 400px;
+  height: 400px;
+}
 
- .img {
-     width: 400px;
-     height: 400px;
- }
+.window {
+  margin-bottom: 10%;
+  width: 400px;
+  height: 400px;
+  border: 1px solid red;
+  position: relative;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 20px;
+}
 
- .window {
-     margin-bottom: 10%;
-     width: 400px;
-     height: 400px;
-     border: 1px solid red;
-     position: relative;
-     display: flex;
-     align-items: center;
-     /* justify-content: center; */
- overflow: hidden;
- }
+.container {
+  display: flex;
+  position: relative;
+  width: 1200px;
+  transition: all 1s ease;
+}
 
- .container {
-   display: flex;
-   position: relative;
-   width: 1200px;
-   transition: all 1s ease;
- }
+.btnRight {
+  margin-left: 1%;
+}
 
- .btnRight {
-   margin-left: 1%;
- }
+.btnLeft {
+  margin-right: 1%;
+}
 
- .btnLeft {
-   margin-right: 1%;
- }
-
- .btnContainer {
-   position: absolute;
-   z-index: 10;
-   top: 50%;
-   width: inherit;
-   height: auto;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   flex-direction: row
- }
+.btnContainer {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  width: inherit;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}

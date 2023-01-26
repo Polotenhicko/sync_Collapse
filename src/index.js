@@ -2,7 +2,7 @@ import ReactDOM from 'react-dom/client';
 import './App.css';
 // import './Carousel.css';
 import Carousel from './Components/Carousel/Carousel';
-import Collapse from './Components/Collapse';
+import Collapse from './Components/Collapse/Collapse';
 const links = [
   'https://pluspng.com/img-png/react-logo-png-img-react-logo-png-react-js-logo-png-transparent-png-1142x1027.png',
   'https://askerweb.by/wp-content/uploads/2021/09/JS.png',

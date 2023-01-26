@@ -24,14 +24,7 @@ class Carousel extends React.Component {
       this.setState({ ofset: (this.state.ofset += 400) });
     }
   }
-  // randomKey() {
-  //   let randomNum = Math.floor(Math.random() * (1000 - 0 + 1)) + 0;
-  //   if (this.arrWithKey.includes(randomNum)) {
-  //     this.randomKey();
-  //   }
-  //   this.arrWithKey.push(randomNum);
-  //   return randomNum;
-  // }
+
   render() {
     return (
       <div className="window">

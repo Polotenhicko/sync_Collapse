@@ -1,5 +1,6 @@
 import ReactDOM from 'react-dom/client';
 import './App.css';
+// import './Carousel.css';
 import Carousel from './Components/Carousel/Carousel';
 import Collapse from './Components/Collapse';
 const links = [
